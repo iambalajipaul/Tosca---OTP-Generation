@@ -1,4 +1,4 @@
-generates a TOTP (Time-based One-Time Password) and stores it in a Tosca buffer.
+This solution generates a TOTP (Time-based One-Time Password) and stores it in a Tosca buffer.
 It's useful for test automation scenarios involving MFA/2FA logins using Microsoft or Google Authenticator-compatible codes.
 
 ✅ Features
@@ -32,4 +32,6 @@ Algorithm	sha1	Buffer
 Encoding	base32	Buffer
 
 Output - a 6 digit OTP is stored in the Buffer named 'OTP'
+
+If you want further customization or any querires, feel free to reach out to me via https://www.linkedin.com/in/contactbalaji/
 
