@@ -33,5 +33,16 @@ Encoding	base32	Buffer
 
 Output - a 6 digit OTP is stored in the Buffer named 'OTP'
 
+Steps to implement:
+1. Copy the files GenerateTOTP.dll, GenerateTOTP.pdb and Otp.NET.dll to TBox home folder(Usually C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\TBox)(Note: Tosca should be opened after pasting the files as these files are loaded during opening)
+2. Open Tosca commander and your project.
+3. Import the module TOTP.tsu file in your Tosca project
+4. Add the module generate OTP to your test case and provide secret to generate the OTP
+5. In the step where you need to insert the value in UI, use B{OTP}
+
+Steps to get secret(Microsoft Accounts):
+1. Navigate to https://mysignins.microsoft.com/security-info -> signIn
+2. Add sign-in method -> Select Microsoft Authenticator -> Select 'I want to use a different Authenticator app' -> Click Next -> Select Can't scan image to get the secret key
+
 If you want further customization or any querires, feel free to reach out to me via https://www.linkedin.com/in/contactbalaji/
 
