@@ -36,7 +36,7 @@ Output - a 6 digit OTP is stored in the Buffer named 'OTP'
 Steps to implement:
 1. Copy the files GenerateTOTP.dll and Otp.NET.dll to TBox home folder(Usually C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\TBox)(Note: Tosca should be opened after pasting the files as these files are loaded during opening)
 2. Open Tosca commander and your project.
-3. Import the module TOTPGeneration_trial.tsu file in your Tosca project
+3. Import the module Totp generation_Trial.tsu file in your Tosca project
 4. Add the module generate OTP to your test case and provide secret to generate the OTP
 5. In the step where you need to insert the value in UI, use B{OTP}
 
