@@ -37,7 +37,7 @@ Steps to implement:
 2. Open Tosca commander and your project.
 3. Import the module Totp generation_Trial.tsu file in your Tosca project
 4. Add the module generate OTP to your test case and provide secret to generate the OTP
-5. In the step where you need to insert the value in UI, use B{OTP}
+5. In the step where you need to insert the value in UI, use B{OTP} - // Not applicable for Trial module
 
 Steps to get secret(Microsoft Accounts):
 1. Navigate to https://mysignins.microsoft.com/security-info -> signIn
