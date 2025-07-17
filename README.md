@@ -16,9 +16,9 @@ Otp.NET NuGet package is used for OTP generation
 
 📦 Parameters (Tosca Test Step)
 Name	Type	ActionMode	Required	Description
-Secret	String	Buffer	✅ Yes	Base32-encoded shared secret
-Algorithm	String	Buffer	❌ No	One of: sha1 (default), sha256, sha512
-Encoding	String	Buffer	❌ No	Only base32 is supported (default)
+Secret	String	Input	✅ Yes	Base32-encoded shared secret
+Algorithm	String	Input	❌ No	One of: sha1 (default), sha256, sha512
+Encoding	String	Input	❌ No	Only base32 is supported (default)
 
 📤 Output
 Sets a buffer named OTP with the generated 6-digit code.
@@ -27,11 +27,10 @@ Sets a buffer named OTP with the generated 6-digit code.
 Tosca Test Step Example:
 
 Parameter	Value	ActionMode
-Secret	JBSWY3DPEHPK3PXP	Buffer
-Algorithm	sha1	Buffer
-Encoding	base32	Buffer
+Secret	JBSWY3DPEHPK3PXP	Input
 
-Output - a 6 digit OTP is stored in the Buffer named 'OTP'
+
+Output - a 6 digit OTP is stored in the Buffer named 'OTP' //Note - For trial module, you can only see the TOTP in Loginfo.
 
 Steps to implement:
 1. Copy the files GenerateTOTP.dll and Otp.NET.dll to TBox home folder(Usually C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\TBox)(Note: Tosca should be opened after pasting the files as these files are loaded during opening)
